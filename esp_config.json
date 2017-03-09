@@ -1,0 +1,13 @@
+{
+	"username": "",
+	"password": "",
+	"auth_host_ip": "",  
+	"ip": "",
+	"mac_address": "",   
+	"client_version": "",
+	"service_type": "",  
+	"dhcp_setting": "", 
+	"delay_enable": "",
+	"reconnet_enable": "", 	 
+	"message_display_enable": ""
+}
