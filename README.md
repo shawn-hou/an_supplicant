@@ -52,15 +52,15 @@ Linux、MAC OS登录校园网方案:
 {
 	"username": "admin",					# 用户名
 	"password": "admin",					# 密码
-	"auth_host_ip": "210.45.194.10",		# 服务器IP地址(程序自动搜寻不必担心)
-	"ip": "8.8.8.8",						# 本机IP地址
-	"mac_address": "AA:AA:AA:AA:AA:AA",		# 本机MAC地址
+	"auth_host_ip": "210.45.194.10",			# 服务器IP地址(程序自动搜寻不必担心)
+	"ip": "8.8.8.8",					# 本机IP地址
+	"mac_address": "AA:AA:AA:AA:AA:AA",			# 本机MAC地址
 	"client_version": "3.6.4",				# 客户端版本号(推荐3.6.4)
 	"service_type": "int",					# 服务类型(程序自动搜寻不必担心)
 	"dhcp_setting": "0",					# 开启二次DHCP(0 or 1)
 	"delay_enable": "0",					# 延迟上线(等待重新分配IP地址 0 or 1)
 	"reconnet_enable": "1",					# 自动重连(0 or 1)
-	"message_display_enable": "1"			# 显示认证之后服务器返回的消息(1 or 0)
+	"message_display_enable": "1"				# 显示认证之后服务器返回的消息(1 or 0)
 }
 ```
 
