@@ -3,6 +3,7 @@
 
 ## 测试环境
 * Mac OS
+* Linux
 * Windows
 * Android
 * OpenWrt
@@ -15,10 +16,10 @@
 	- netifaces(获取指定网卡的IP地址) (目前并不需要)
 
 ## AHNU
-Linux登录校园网方案:  
+Linux、MAC OS登录校园网方案:  
 
 * 内网认证使用mentohust  
-* 外网用这个python脚本
+* 外网用此python脚本
 
 ## 其他学校   
 已知测试通过的院校:  
@@ -31,7 +32,9 @@ Linux登录校园网方案:
 ## 前排重要提示
 仅支持 `BAS认证`,PPPOE、Web认证并不支持  
 仅支持 `BAS认证`,PPPOE、Web认证并不支持 X2  
-仅支持 `BAS认证`,PPPOE、Web认证并不支持 X3
+仅支持 `BAS认证`,PPPOE、Web认证并不支持 X3  
+
+* PS: 现在有些客户端版本更新后将BAS认证改名了,有叫`ANSEC`的,还有叫`翼起来`的,本质上还是 `BAS`
 
 ## 关于图形用户界面版本
 点击[`这里`](https://github.com/lyq1996/an_supplicant/tree/master/gui)查看说明 
@@ -47,17 +50,17 @@ Linux登录校园网方案:
 
 ```
 {
-	"username": "admin",				# 用户名
-	"password": "admin",				# 密码
-	"auth_host_ip": "210.45.194.10",	# 服务器IP地址(程序自动搜寻不必担心)
-	"ip": "8.8.8.8",					# 本机IP地址
+	"username": "admin",					# 用户名
+	"password": "admin",					# 密码
+	"auth_host_ip": "210.45.194.10",		# 服务器IP地址(程序自动搜寻不必担心)
+	"ip": "8.8.8.8",					    # 本机IP地址
 	"mac_address": "AA:AA:AA:AA:AA:AA",	# 本机MAC地址
-	"client_version": "3.6.4",			# 客户端版本号(推荐3.6.4)
-	"service_type": "int",				# 服务类型(程序自动搜寻不必担心)
-	"dhcp_setting": "0",				# 开启二次DHCP(0 or 1)
-	"delay_enable": "0",				# 延迟上线(等待重新分配IP地址 0 or 1)
-	"reconnet_enable": "1",				# 自动重连(0 or 1)
-	"message_display_enable": "1"		# 显示认证之后服务器返回的消息(1 or 0)
+	"client_version": "3.6.4",				# 客户端版本号(推荐3.6.4)
+	"service_type": "int",					# 服务类型(程序自动搜寻不必担心)
+	"dhcp_setting": "0",					# 开启二次DHCP(0 or 1)
+	"delay_enable": "0",					# 延迟上线(等待重新分配IP地址 0 or 1)
+	"reconnet_enable": "1",					# 自动重连(0 or 1)
+	"message_display_enable": "1"			# 显示认证之后服务器返回的消息(1 or 0)
 }
 ```
 
@@ -68,6 +71,7 @@ Linux登录校园网方案:
 ```
 $ python edu_supplicant.py -c /root/esp_config.json
 ```
+
 `-c /root/esp_config.json`表示配置文件所在目录
 
 按照提示输入IP、MAC地址等参数,接着程序会自动退出,再次运行即可完成上线
@@ -76,6 +80,9 @@ $ python edu_supplicant.py -c /root/esp_config.json
 ``` 
 Ctrl ＋ C
 ```
+
+图:  
+![image](/usage.jpg)
 
 ## 一些其它事项:   
 
